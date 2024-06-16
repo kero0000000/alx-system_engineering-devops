@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# a bash script that configuers an ubuntu server with the below requirements.
+# rquirements:
+# localhost resolves to 127.0.0.2
+# facebook.com resolves to 8.8.8.8.
+# the checker is running on Docker
+cp/etc/Hosts ~/hosts.new
+echo "127.0.0.2 localhost" > ~/hosts.new
+echo "8.8.8.8 facbook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/Hosts
