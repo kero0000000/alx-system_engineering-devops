@@ -3,5 +3,5 @@
 
 exec { 'fix-wordpess-server-error':
         command => 'sed -1 s/phpp/php/g /var/www/html/wp-settings.php',
-        path    => '',
+        path    => ''.
 }
